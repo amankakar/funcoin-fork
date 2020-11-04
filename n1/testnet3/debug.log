@@ -1,0 +1,339 @@
+2020-11-03 11:35:19 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-11-03 11:35:19 Funcoin version v0.8.7.5-unk-beta (2015-01-12 16:55:18 -1000)
+2020-11-03 11:35:19 Using OpenSSL version OpenSSL 1.0.2n  7 Dec 2017
+2020-11-03 11:35:19 Default data directory /home/aman/.funcoin
+2020-11-03 11:35:19 Using data directory /home/aman/Downloads/litecoin/./n1/testnet3
+2020-11-03 11:35:19 Using at most 125 connections (1024 file descriptors available)
+2020-11-03 11:35:19 Using 8 threads for script verification
+2020-11-03 11:35:19 init message: Verifying wallet...
+2020-11-03 11:35:19 dbenv.open LogDir=/home/aman/Downloads/litecoin/./n1/testnet3/database ErrorFile=/home/aman/Downloads/litecoin/./n1/testnet3/db.log
+2020-11-03 11:35:19 Bound to [::]:12333
+2020-11-03 11:35:19 Bound to 0.0.0.0:12333
+2020-11-03 11:35:19 init message: Loading block index...
+2020-11-03 11:35:19 Opening LevelDB in /home/aman/Downloads/litecoin/./n1/testnet3/blocks/index
+2020-11-03 11:35:19 Opened LevelDB successfully
+2020-11-03 11:35:19 Opening LevelDB in /home/aman/Downloads/litecoin/./n1/testnet3/chainstate
+2020-11-03 11:35:19 Opened LevelDB successfully
+2020-11-03 11:35:19 LoadBlockIndexDB(): last block file = 0
+2020-11-03 11:35:19 LoadBlockIndexDB(): transaction index disabled
+2020-11-03 11:35:19 Initializing databases...
+2020-11-03 11:35:19 bafd7d8dd566980bc65c6fd2dac9fc86e3fda54461342bea5d801405b881d7cc
+2020-11-03 11:35:19 bafd7d8dd566980bc65c6fd2dac9fc86e3fda54461342bea5d801405b881d7cc
+2020-11-03 11:35:19 968b86d3ad18495025e28758eb6903f01252cdae0941130068608cd66f4131fc
+2020-11-03 11:35:19 CBlock(hash=bafd7d8dd566980bc65c6fd2dac9fc86e3fda54461342bea5d801405b881d7cc, input=010000000000000000000000000000000000000000000000000000000000000000000000fc31416fd68c606800134109aecd5212f00369eb5887e225504918add3868b96ede39f5ff0ff0f1edf68ff16, PoW=00000ad3d38600e117d6fec71c997a901f67fe9fa7acb55e6124fb10c78f1801, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=968b86d3ad18495025e28758eb6903f01252cdae0941130068608cd66f4131fc, nTime=1604314093, nBits=1e0ffff0, nNonce=385837279, vtx=1)
+2020-11-03 11:35:19   CTransaction(hash=968b86d3ad18495025e28758eb6903f01252cdae0941130068608cd66f4131fc, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104194e4f204e455720484541444c494e4553202e2e212048455245)
+    CTxOut(nValue=100.00000000, scriptPubKey=041284089bf2d19c342494e2d08d2c)
+  vMerkleTree: 968b86d3ad18495025e28758eb6903f01252cdae0941130068608cd66f4131fc 
+2020-11-03 11:35:19 Pre-allocating up to position 0x1000000 in blk00000.dat
+2020-11-03 11:35:19 SetBestChain: new best=bafd7d8dd566980bc65c6fd2dac9fc86e3fda54461342bea5d801405b881d7cc  height=0  log2_work=20.000022  tx=1  date=2020-11-02 10:48:13 progress=0.121522
+2020-11-03 11:35:19 init message: Verifying blocks...
+2020-11-03 11:35:19  block index              50ms
+2020-11-03 11:35:19 init message: Loading wallet...
+2020-11-03 11:35:19 nFileVersion = 80705
+2020-11-03 11:35:19 Performing wallet upgrade to 60000
+2020-11-03 11:35:19 keypool added key 1, size=1
+2020-11-03 11:35:19 keypool added key 2, size=2
+2020-11-03 11:35:19 keypool added key 3, size=3
+2020-11-03 11:35:19 keypool added key 4, size=4
+2020-11-03 11:35:19 keypool added key 5, size=5
+2020-11-03 11:35:19 keypool added key 6, size=6
+2020-11-03 11:35:19 keypool added key 7, size=7
+2020-11-03 11:35:19 keypool added key 8, size=8
+2020-11-03 11:35:19 keypool added key 9, size=9
+2020-11-03 11:35:19 keypool added key 10, size=10
+2020-11-03 11:35:19 keypool added key 11, size=11
+2020-11-03 11:35:19 keypool added key 12, size=12
+2020-11-03 11:35:19 keypool added key 13, size=13
+2020-11-03 11:35:19 keypool added key 14, size=14
+2020-11-03 11:35:19 keypool added key 15, size=15
+2020-11-03 11:35:19 keypool added key 16, size=16
+2020-11-03 11:35:19 keypool added key 17, size=17
+2020-11-03 11:35:19 keypool added key 18, size=18
+2020-11-03 11:35:19 keypool added key 19, size=19
+2020-11-03 11:35:19 keypool added key 20, size=20
+2020-11-03 11:35:19 keypool added key 21, size=21
+2020-11-03 11:35:19 keypool added key 22, size=22
+2020-11-03 11:35:19 keypool added key 23, size=23
+2020-11-03 11:35:19 keypool added key 24, size=24
+2020-11-03 11:35:19 keypool added key 25, size=25
+2020-11-03 11:35:19 keypool added key 26, size=26
+2020-11-03 11:35:19 keypool added key 27, size=27
+2020-11-03 11:35:19 keypool added key 28, size=28
+2020-11-03 11:35:19 keypool added key 29, size=29
+2020-11-03 11:35:19 keypool added key 30, size=30
+2020-11-03 11:35:19 keypool added key 31, size=31
+2020-11-03 11:35:19 keypool added key 32, size=32
+2020-11-03 11:35:19 keypool added key 33, size=33
+2020-11-03 11:35:19 keypool added key 34, size=34
+2020-11-03 11:35:19 keypool added key 35, size=35
+2020-11-03 11:35:19 keypool added key 36, size=36
+2020-11-03 11:35:19 keypool added key 37, size=37
+2020-11-03 11:35:19 keypool added key 38, size=38
+2020-11-03 11:35:19 keypool added key 39, size=39
+2020-11-03 11:35:19 keypool added key 40, size=40
+2020-11-03 11:35:19 keypool added key 41, size=41
+2020-11-03 11:35:19 keypool added key 42, size=42
+2020-11-03 11:35:19 keypool added key 43, size=43
+2020-11-03 11:35:19 keypool added key 44, size=44
+2020-11-03 11:35:19 keypool added key 45, size=45
+2020-11-03 11:35:19 keypool added key 46, size=46
+2020-11-03 11:35:19 keypool added key 47, size=47
+2020-11-03 11:35:19 keypool added key 48, size=48
+2020-11-03 11:35:19 keypool added key 49, size=49
+2020-11-03 11:35:19 keypool added key 50, size=50
+2020-11-03 11:35:19 keypool added key 51, size=51
+2020-11-03 11:35:19 keypool added key 52, size=52
+2020-11-03 11:35:19 keypool added key 53, size=53
+2020-11-03 11:35:19 keypool added key 54, size=54
+2020-11-03 11:35:19 keypool added key 55, size=55
+2020-11-03 11:35:19 keypool added key 56, size=56
+2020-11-03 11:35:19 keypool added key 57, size=57
+2020-11-03 11:35:19 keypool added key 58, size=58
+2020-11-03 11:35:20 keypool added key 59, size=59
+2020-11-03 11:35:20 keypool added key 60, size=60
+2020-11-03 11:35:20 keypool added key 61, size=61
+2020-11-03 11:35:20 keypool added key 62, size=62
+2020-11-03 11:35:20 keypool added key 63, size=63
+2020-11-03 11:35:20 keypool added key 64, size=64
+2020-11-03 11:35:20 keypool added key 65, size=65
+2020-11-03 11:35:20 keypool added key 66, size=66
+2020-11-03 11:35:20 keypool added key 67, size=67
+2020-11-03 11:35:20 keypool added key 68, size=68
+2020-11-03 11:35:20 keypool added key 69, size=69
+2020-11-03 11:35:20 keypool added key 70, size=70
+2020-11-03 11:35:20 keypool added key 71, size=71
+2020-11-03 11:35:20 keypool added key 72, size=72
+2020-11-03 11:35:20 keypool added key 73, size=73
+2020-11-03 11:35:20 keypool added key 74, size=74
+2020-11-03 11:35:20 keypool added key 75, size=75
+2020-11-03 11:35:20 keypool added key 76, size=76
+2020-11-03 11:35:20 keypool added key 77, size=77
+2020-11-03 11:35:20 keypool added key 78, size=78
+2020-11-03 11:35:20 keypool added key 79, size=79
+2020-11-03 11:35:20 keypool added key 80, size=80
+2020-11-03 11:35:20 keypool added key 81, size=81
+2020-11-03 11:35:20 keypool added key 82, size=82
+2020-11-03 11:35:20 keypool added key 83, size=83
+2020-11-03 11:35:20 keypool added key 84, size=84
+2020-11-03 11:35:20 keypool added key 85, size=85
+2020-11-03 11:35:20 keypool added key 86, size=86
+2020-11-03 11:35:20 keypool added key 87, size=87
+2020-11-03 11:35:20 keypool added key 88, size=88
+2020-11-03 11:35:20 keypool added key 89, size=89
+2020-11-03 11:35:20 keypool added key 90, size=90
+2020-11-03 11:35:20 keypool added key 91, size=91
+2020-11-03 11:35:20 keypool added key 92, size=92
+2020-11-03 11:35:20 keypool added key 93, size=93
+2020-11-03 11:35:20 keypool added key 94, size=94
+2020-11-03 11:35:20 keypool added key 95, size=95
+2020-11-03 11:35:20 keypool added key 96, size=96
+2020-11-03 11:35:20 keypool added key 97, size=97
+2020-11-03 11:35:20 keypool added key 98, size=98
+2020-11-03 11:35:20 keypool added key 99, size=99
+2020-11-03 11:35:20 keypool added key 100, size=100
+2020-11-03 11:35:20 keypool added key 101, size=101
+2020-11-03 11:35:20 keypool reserve 1
+2020-11-03 11:35:20 keypool keep 1
+2020-11-03 11:35:20  wallet                 1247ms
+2020-11-03 11:35:20 init message: Loading addresses...
+2020-11-03 11:35:20 ERROR: CAddrman::Read() : open failed
+2020-11-03 11:35:20 Invalid or missing peers.dat; recreating
+2020-11-03 11:35:20 Loaded 0 addresses from peers.dat  0ms
+2020-11-03 11:35:20 mapBlockIndex.size() = 1
+2020-11-03 11:35:20 nBestHeight = 0
+2020-11-03 11:35:20 setKeyPool.size() = 100
+2020-11-03 11:35:20 mapWallet.size() = 0
+2020-11-03 11:35:20 mapAddressBook.size() = 1
+2020-11-03 11:35:20 upnp thread start
+2020-11-03 11:35:20 dnsseed thread start
+2020-11-03 11:35:20 Loading addresses from DNS seeds (could take a while)
+2020-11-03 11:35:20 0 addresses found from DNS seeds
+2020-11-03 11:35:20 dnsseed thread exit
+2020-11-03 11:35:20 opencon thread start
+2020-11-03 11:35:20 dumpaddr thread start
+2020-11-03 11:35:20 addcon thread start
+2020-11-03 11:35:20 net thread start
+2020-11-03 11:35:20 msghand thread start
+2020-11-03 11:35:20 init message: Done loading
+2020-11-03 11:35:20 refreshWallet
+2020-11-03 11:35:25 connection timeout
+2020-11-03 11:35:25 ERROR: GetMyExternalIP() : connection to 91.198.22.70:80 failed
+2020-11-03 11:35:26 GetMyExternalIP() received [101.50.127.41] 101.50.127.41:0
+2020-11-03 11:35:26 GetMyExternalIP() returned 101.50.127.41
+2020-11-03 11:35:26 AddLocal(101.50.127.41:12333,4)
+2020-11-03 11:35:28 No valid UPnP IGDs found
+2020-11-03 11:35:28 upnp thread exit
+2020-11-03 11:36:51 dumpaddr thread stop
+2020-11-03 11:36:51 addcon thread interrupt
+2020-11-03 11:36:51 msghand thread interrupt
+2020-11-03 11:36:51 opencon thread interrupt
+2020-11-03 11:36:51 net thread interrupt
+2020-11-03 11:36:51 Shutdown : In progress...
+2020-11-03 11:36:51 Flush(false)
+2020-11-03 11:36:51 wallet.dat refcount=0
+2020-11-03 11:36:51 wallet.dat checkpoint
+2020-11-03 11:36:51 wallet.dat detach
+2020-11-03 11:36:51 wallet.dat closed
+2020-11-03 11:36:51 DBFlush(false) ended               3ms
+2020-11-03 11:36:51 StopNode()
+2020-11-03 11:36:52 Flushed 0 addresses to peers.dat  4ms
+2020-11-03 11:36:52 Committing 0 changed transactions to coin database...
+2020-11-03 11:36:52 Flush(true)
+2020-11-03 11:36:52 wallet.dat refcount=0
+2020-11-03 11:36:52 wallet.dat checkpoint
+2020-11-03 11:36:52 wallet.dat detach
+2020-11-03 11:36:52 wallet.dat closed
+2020-11-03 11:36:52 DBFlush(true) ended               7ms
+2020-11-03 11:36:52 Shutdown : done
+2020-11-03 11:36:56 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2020-11-03 11:36:56 Funcoin version v0.8.7.5-unk-beta (2015-01-12 16:55:18 -1000)
+2020-11-03 11:36:56 Using OpenSSL version OpenSSL 1.0.2n  7 Dec 2017
+2020-11-03 11:36:56 Default data directory /home/aman/.funcoin
+2020-11-03 11:36:56 Using data directory /home/aman/Downloads/litecoin/./n1/testnet3
+2020-11-03 11:36:56 Using at most 125 connections (1024 file descriptors available)
+2020-11-03 11:36:56 Using 8 threads for script verification
+2020-11-03 11:36:56 init message: Verifying wallet...
+2020-11-03 11:36:56 dbenv.open LogDir=/home/aman/Downloads/litecoin/./n1/testnet3/database ErrorFile=/home/aman/Downloads/litecoin/./n1/testnet3/db.log
+2020-11-03 11:36:56 Bound to [::]:12333
+2020-11-03 11:36:56 Bound to 0.0.0.0:12333
+2020-11-03 11:36:56 init message: Loading block index...
+2020-11-03 11:36:56 Opening LevelDB in /home/aman/Downloads/litecoin/./n1/testnet3/blocks/index
+2020-11-03 11:36:56 Opened LevelDB successfully
+2020-11-03 11:36:56 Opening LevelDB in /home/aman/Downloads/litecoin/./n1/testnet3/chainstate
+2020-11-03 11:36:56 Opened LevelDB successfully
+2020-11-03 11:36:56 LoadBlockIndexDB(): last block file = 0
+2020-11-03 11:36:56 LoadBlockIndexDB(): last block file info: CBlockFileInfo(blocks=1, size=248, heights=0...0, time=2020-11-02...2020-11-02)
+2020-11-03 11:36:56 LoadBlockIndexDB(): transaction index disabled
+2020-11-03 11:36:56 LoadBlockIndexDB(): hashBestChain=bafd7d8dd566980bc65c6fd2dac9fc86e3fda54461342bea5d801405b881d7cc  height=0 date=2020-11-02 10:48:13
+2020-11-03 11:36:56 init message: Verifying blocks...
+2020-11-03 11:36:56  block index              34ms
+2020-11-03 11:36:56 init message: Loading wallet...
+2020-11-03 11:36:56 nFileVersion = 80705
+2020-11-03 11:36:56  wallet                  200ms
+2020-11-03 11:36:56 init message: Loading addresses...
+2020-11-03 11:36:56 Loaded 0 addresses from peers.dat  0ms
+2020-11-03 11:36:56 mapBlockIndex.size() = 1
+2020-11-03 11:36:56 nBestHeight = 0
+2020-11-03 11:36:56 setKeyPool.size() = 100
+2020-11-03 11:36:56 mapWallet.size() = 0
+2020-11-03 11:36:56 mapAddressBook.size() = 1
+2020-11-03 11:36:56 dnsseed thread start
+2020-11-03 11:36:56 opencon thread start
+2020-11-03 11:36:56 addcon thread start
+2020-11-03 11:36:56 dumpaddr thread start
+2020-11-03 11:36:56 net thread start
+2020-11-03 11:36:56 Loading addresses from DNS seeds (could take a while)
+2020-11-03 11:36:56 0 addresses found from DNS seeds
+2020-11-03 11:36:56 dnsseed thread exit
+2020-11-03 11:36:56 msghand thread start
+2020-11-03 11:36:56 upnp thread start
+2020-11-03 11:36:56 init message: Done loading
+2020-11-03 11:36:56 refreshWallet
+2020-11-03 11:37:01 connection timeout
+2020-11-03 11:37:01 ERROR: GetMyExternalIP() : connection to 91.198.22.70:80 failed
+2020-11-03 11:37:01 GetMyExternalIP() received [101.50.127.41] 101.50.127.41:0
+2020-11-03 11:37:01 GetMyExternalIP() returned 101.50.127.41
+2020-11-03 11:37:01 AddLocal(101.50.127.41:12333,4)
+2020-11-03 11:37:04 No valid UPnP IGDs found
+2020-11-03 11:37:04 upnp thread exit
+2020-11-03 11:37:06 accepted connection 127.0.0.1:33782
+2020-11-03 11:37:06 send version message: version 70002, blocks=0, us=101.50.127.41:12333, them=0.0.0.0:0, peer=127.0.0.1:33782
+2020-11-03 11:37:06 Added time data, samples 2, offset +0 (+0 minutes)
+2020-11-03 11:37:06 receive version message: /Satoshi:0.8.7.5/: version 70002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:33782
+2020-11-03 11:37:06 getblocks -1 to 0000000000000000000000000000000000000000000000000000000000000000 limit 500
+2020-11-03 11:37:18 accepted connection 127.0.0.1:33784
+2020-11-03 11:37:18 send version message: version 70002, blocks=0, us=101.50.127.41:12333, them=0.0.0.0:0, peer=127.0.0.1:33784
+2020-11-03 11:37:18 receive version message: /Satoshi:0.8.7.5/: version 70002, blocks=0, us=0.0.0.0:0, them=0.0.0.0:0, peer=127.0.0.1:33784
+2020-11-03 11:37:18 getblocks -1 to 0000000000000000000000000000000000000000000000000000000000000000 limit 500
+2020-11-03 11:39:04 received block 5aa0b0c21a32df1ae3240b3da8f6ad5bbe4363af55998b5c80e751c7c92ce442
+2020-11-03 11:39:04 Pre-allocating up to position 0x100000 in rev00000.dat
+2020-11-03 11:39:04 Committing 1 changed transactions to coin database...
+2020-11-03 11:39:04 SetBestChain: new best=5aa0b0c21a32df1ae3240b3da8f6ad5bbe4363af55998b5c80e751c7c92ce442  height=1  log2_work=21.000012  tx=2  date=2020-11-03 11:39:03 progress=0.999959
+2020-11-03 11:39:04 ProcessBlock: ACCEPTED
+2020-11-03 11:39:04 received getdata for: block 5aa0b0c21a32df1ae3240b3da8f6ad5bbe4363af55998b5c80e751c7c92ce442
+2020-11-03 11:42:11 received block 243d85f064db2e09d8dd6f370cd28e7f9a58365072fb4774bf6c5ac2534bbd71
+2020-11-03 11:42:11 Committing 1 changed transactions to coin database...
+2020-11-03 11:42:11 SetBestChain: new best=243d85f064db2e09d8dd6f370cd28e7f9a58365072fb4774bf6c5ac2534bbd71  height=2  log2_work=21.584978  tx=3  date=2020-11-03 11:42:10 progress=0.999973
+2020-11-03 11:42:11 ProcessBlock: ACCEPTED
+2020-11-03 11:42:11 received getdata for: block 243d85f064db2e09d8dd6f370cd28e7f9a58365072fb4774bf6c5ac2534bbd71
+2020-11-03 11:42:58 received block d6a869a329fc89916620b66dfc58452f1a8646d8ef2053a00eabad450900e6e8
+2020-11-03 11:42:58 Committing 1 changed transactions to coin database...
+2020-11-03 11:42:58 SetBestChain: new best=d6a869a329fc89916620b66dfc58452f1a8646d8ef2053a00eabad450900e6e8  height=3  log2_work=22.000017  tx=4  date=2020-11-03 11:42:58 progress=1.000000
+2020-11-03 11:42:58 ProcessBlock: ACCEPTED
+2020-11-03 11:42:58 received getdata for: block d6a869a329fc89916620b66dfc58452f1a8646d8ef2053a00eabad450900e6e8
+2020-11-03 11:43:02 ResendWalletTransactions()
+2020-11-03 11:43:30 received block 7890afd40043ee2c2c1215f8982b26db076e323d344d2ad94bbaa0c15d9783e5
+2020-11-03 11:43:30 Committing 1 changed transactions to coin database...
+2020-11-03 11:43:30 SetBestChain: new best=7890afd40043ee2c2c1215f8982b26db076e323d344d2ad94bbaa0c15d9783e5  height=4  log2_work=22.321946  tx=5  date=2020-11-03 11:43:30 progress=1.000000
+2020-11-03 11:43:30 ProcessBlock: ACCEPTED
+2020-11-03 11:43:30 received getdata for: block 7890afd40043ee2c2c1215f8982b26db076e323d344d2ad94bbaa0c15d9783e5
+2020-11-03 11:43:42 received block 4965667713cf06a342d7bc334b60ff406e1e422b9ab3f4ff8a050a1e49d6bad1
+2020-11-03 11:43:42 Committing 1 changed transactions to coin database...
+2020-11-03 11:43:42 SetBestChain: new best=4965667713cf06a342d7bc334b60ff406e1e422b9ab3f4ff8a050a1e49d6bad1  height=5  log2_work=22.584981  tx=6  date=2020-11-03 11:43:42 progress=1.000000
+2020-11-03 11:43:42 ProcessBlock: ACCEPTED
+2020-11-03 11:43:43 received getdata for: block 4965667713cf06a342d7bc334b60ff406e1e422b9ab3f4ff8a050a1e49d6bad1
+2020-11-03 11:44:20 socket closed
+2020-11-03 11:44:20 disconnecting node 127.0.0.1:33784
+2020-11-03 11:44:23 socket closed
+2020-11-03 11:44:23 disconnecting node 127.0.0.1:33782
+2020-11-03 11:44:25 addcon thread interrupt
+2020-11-03 11:44:25 dumpaddr thread stop
+2020-11-03 11:44:25 opencon thread interrupt
+2020-11-03 11:44:25 msghand thread interrupt
+2020-11-03 11:44:25 net thread interrupt
+2020-11-03 11:44:25 Shutdown : In progress...
+2020-11-03 11:44:25 Flush(false)
+2020-11-03 11:44:25 wallet.dat refcount=0
+2020-11-03 11:44:25 wallet.dat checkpoint
+2020-11-03 11:44:25 wallet.dat detach
+2020-11-03 11:44:25 wallet.dat closed
+2020-11-03 11:44:25 DBFlush(false) ended               4ms
+2020-11-03 11:44:25 StopNode()
+2020-11-03 11:44:25 Flushed 0 addresses to peers.dat  7ms
+2020-11-03 11:44:25 Committing 0 changed transactions to coin database...
+2020-11-03 11:44:25 Flush(true)
+2020-11-03 11:44:25 wallet.dat refcount=0
+2020-11-03 11:44:25 wallet.dat checkpoint
+2020-11-03 11:44:25 wallet.dat detach
+2020-11-03 11:44:25 wallet.dat closed
+2020-11-03 11:44:25 DBFlush(true) ended               7ms
+2020-11-03 11:44:25 Shutdown : done
