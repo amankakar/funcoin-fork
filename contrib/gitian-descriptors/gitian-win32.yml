@@ -1,24 +1,24 @@
 ---
 name: "funcoin"
 suites:
-- "precise"
+  - "precise"
 architectures:
-- "amd64"
+  - "amd64"
 packages:
-- "mingw-w64"
-- "g++-mingw-w64"
-- "git-core"
-- "unzip"
-- "nsis"
-- "faketime"
+  - "mingw-w64"
+  - "g++-mingw-w64"
+  - "git-core"
+  - "unzip"
+  - "nsis"
+  - "faketime"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/funcoin-project/funcoin.git"
-  "dir": "funcoin"
+  - "url": "https://github.com/amankakar/funcoin-fork.git"
+    "dir": "funcoin"
 files:
-- "qt-win32-4.8.5-gitian-r8.zip"
-- "boost-win32-1.55.0-gitian-r6.zip"
-- "bitcoin08-deps-win32-gitian-r13.zip"
+  - "qt-win32-4.8.5-gitian-r8.zip"
+  - "boost-win32-1.55.0-gitian-r6.zip"
+  - "bitcoin08-deps-win32-gitian-r13.zip"
 script: |
   #
   STAGING=$HOME/staging
