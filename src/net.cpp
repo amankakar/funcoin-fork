@@ -56,7 +56,7 @@ int nMaxConnections = 125;
 vector<CNode *> vNodes;
 CCriticalSection cs_vNodes;
 map<CInv, CDataStream> mapRelay;
-deque<pair<int64, CInv>> vRelayExpiration;
+deque<pair<int64, CInv> > vRelayExpiration;
 CCriticalSection cs_mapRelay;
 limitedmap<CInv, int64> mapAlreadyAskedFor(MAX_INV_SZ);
 
@@ -1133,7 +1133,7 @@ void MapPort(bool fUseUPnP)
             upnp_thread->join();
             delete upnp_thread;
         }
-        upnp_thread = new boost::thread(boost::bind(&TraceThread<boost::function<void()>>, "upnp", &ThreadMapPort));
+        upnp_thread = new boost::thread(boost::bind(&TraceThread<boost::function<void()> >, "upnp", &ThreadMapPort));
     }
     else if (upnp_thread)
     {
@@ -1291,7 +1291,7 @@ void ThreadOpenConnections()
         // Only connect out to one peer per network group (/16 for IPv4).
         // Do this here so we don't have to critsect vNodes inside mapAddresses critsect.
         int nOutbound = 0;
-        set<vector<unsigned char>> setConnected;
+        set<vector<unsigned char> > setConnected;
         {
             LOCK(cs_vNodes);
             BOOST_FOREACH (CNode *pnode, vNodes)
@@ -1380,7 +1380,7 @@ void ThreadOpenAddedConnections()
                 lAddresses.push_back(strAddNode);
         }
 
-        list<vector<CService>> lservAddressesToAdd(0);
+        list<vector<CService> > lservAddressesToAdd(0);
         BOOST_FOREACH (string &strAddNode, lAddresses)
         {
             vector<CService> vservNode(0);
@@ -1399,7 +1399,7 @@ void ThreadOpenAddedConnections()
         {
             LOCK(cs_vNodes);
             BOOST_FOREACH (CNode *pnode, vNodes)
-                for (list<vector<CService>>::iterator it = lservAddressesToAdd.begin(); it != lservAddressesToAdd.end(); it++)
+                for (list<vector<CService> >::iterator it = lservAddressesToAdd.begin(); it != lservAddressesToAdd.end(); it++)
                     BOOST_FOREACH (CService &addrNode, *(it))
                         if (pnode->addr == addrNode)
                         {
@@ -1743,7 +1743,7 @@ void StartNode(boost::thread_group &threadGroup)
     if (!GetBoolArg("-dnsseed", true))
         printf("DNS seeding disabled\n");
     else
-        threadGroup.create_thread(boost::bind(&TraceThread<boost::function<void()>>, "dnsseed", &ThreadDNSAddressSeed));
+        threadGroup.create_thread(boost::bind(&TraceThread<boost::function<void()> >, "dnsseed", &ThreadDNSAddressSeed));
 
 #ifdef USE_UPNP
     // Map ports with UPnP
