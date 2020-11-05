@@ -63,7 +63,7 @@ map<uint256, CBlock *> mapOrphanBlocks;
 multimap<uint256, CBlock *> mapOrphanBlocksByPrev;
 
 map<uint256, CTransaction> mapOrphanTransactions;
-map<uint256, set<uint256>> mapOrphanTransactionsByPrev;
+map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
@@ -329,7 +329,7 @@ void static EraseOrphanTx(uint256 hash)
         return;
     BOOST_FOREACH (const CTxIn &txin, it->second.vin)
     {
-        map<uint256, set<uint256>>::iterator itPrev = mapOrphanTransactionsByPrev.find(txin.prevout.hash);
+        map<uint256, set<uint256> >::iterator itPrev = mapOrphanTransactionsByPrev.find(txin.prevout.hash);
         if (itPrev == mapOrphanTransactionsByPrev.end())
             continue;
         itPrev->second.erase(hash);
@@ -449,7 +449,7 @@ bool CTransaction::AreInputsStandard(CCoinsViewCache &mapInputs) const
     {
         const CTxOut &prev = GetOutputFor(vin[i], mapInputs);
 
-        vector<vector<unsigned char>> vSolutions;
+        vector<vector<unsigned char> > vSolutions;
         txnouttype whichType;
         // get the scriptPubKey corresponding to this input:
         const CScript &prevScript = prev.scriptPubKey;
@@ -464,7 +464,7 @@ bool CTransaction::AreInputsStandard(CCoinsViewCache &mapInputs) const
         // be quick, because if there are any operations
         // beside "push data" in the scriptSig the
         // IsStandard() call returns false
-        vector<vector<unsigned char>> stack;
+        vector<vector<unsigned char> > stack;
         if (!EvalScript(stack, vin[i].scriptSig, *this, i, false, 0))
             return false;
 
@@ -473,7 +473,7 @@ bool CTransaction::AreInputsStandard(CCoinsViewCache &mapInputs) const
             if (stack.empty())
                 return false;
             CScript subscript(stack.back().begin(), stack.back().end());
-            vector<vector<unsigned char>> vSolutions2;
+            vector<vector<unsigned char> > vSolutions2;
             txnouttype whichType2;
             if (!Solver(subscript, whichType2, vSolutions2))
                 return false;
@@ -1731,7 +1731,7 @@ bool CBlock::ConnectBlock(CValidationState &state, CBlockIndex *pindex, CCoinsVi
     int nInputs = 0;
     unsigned int nSigOps = 0;
     CDiskTxPos pos(pindex->GetBlockPos(), GetSizeOfCompactSize(vtx.size()));
-    std::vector<std::pair<uint256, CDiskTxPos>> vPos;
+    std::vector<std::pair<uint256, CDiskTxPos> > vPos;
     vPos.reserve(vtx.size());
     for (unsigned int i = 0; i < vtx.size(); i++)
     {
@@ -2681,7 +2681,7 @@ bool static LoadBlockIndexDB()
     boost::this_thread::interruption_point();
 
     // Calculate nChainWork
-    vector<pair<int, CBlockIndex *>> vSortedByHeight;
+    vector<pair<int, CBlockIndex *> > vSortedByHeight;
     vSortedByHeight.reserve(mapBlockIndex.size());
     BOOST_FOREACH (const PAIRTYPE(uint256, CBlockIndex *) & item, mapBlockIndex)
     {
@@ -2972,7 +2972,7 @@ bool InitBlockIndex()
 void PrintBlockTree()
 {
     // pre-compute tree structure
-    map<CBlockIndex *, vector<CBlockIndex *>> mapNext;
+    map<CBlockIndex *, vector<CBlockIndex *> > mapNext;
     for (map<uint256, CBlockIndex *>::iterator mi = mapBlockIndex.begin(); mi != mapBlockIndex.end(); ++mi)
     {
         CBlockIndex *pindex = (*mi).second;
@@ -2982,7 +2982,7 @@ void PrintBlockTree()
         //    mapNext[pindex->pprev].push_back(pindex);
     }
 
-    vector<pair<int, CBlockIndex *>> vStack;
+    vector<pair<int, CBlockIndex *> > vStack;
     vStack.push_back(make_pair(0, pindexGenesisBlock));
 
     int nPrevCol = 0;
@@ -3728,7 +3728,7 @@ bool static ProcessMessage(CNode *pfrom, string strCommand, CDataStream &vRecv)
             // Recursively process any orphan transactions that depended on this one
             for (unsigned int i = 0; i < vWorkQueue.size(); i++)
             {
-                map<uint256, set<uint256>>::iterator itByPrev = mapOrphanTransactionsByPrev.find(vWorkQueue[i]);
+                map<uint256, set<uint256> >::iterator itByPrev = mapOrphanTransactionsByPrev.find(vWorkQueue[i]);
                 if (itByPrev == mapOrphanTransactionsByPrev.end())
                     continue;
                 for (set<uint256>::iterator mi = itByPrev->second.begin();
@@ -4388,7 +4388,7 @@ CBlockTemplate *CreateNewBlock(const CScript &scriptPubKeyIn)
 
         // Priority order to process transactions
         list<COrphan> vOrphan; // list memory doesn't move
-        map<uint256, vector<COrphan *>> mapDependers;
+        map<uint256, vector<COrphan *> > mapDependers;
         bool fPrintPriority = GetBoolArg("-printpriority");
 
         // This vector will be sorted into a priority queue:
